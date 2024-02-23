@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-6 m-auto">
+  <div class="card m-auto">
+    <div class="card-header">
+      Register
+    </div>
+    <div class="card-body">
+      <form [formGroup]="registerationForm" (ngSubmit)="onSubmit()">
+        <div class="form-group col-12">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control"
+          formControlName="Name"
+          >
+          <span *ngIf="!Name.valid && Name.touched"
+          class="error-block">
+            Please provide name
+          </span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="form-control" formControlName="Email">
+        <span *ngIf="!Email.valid && Email.touched || userSubmitted" class="error-block">
+          <span *ngIf="Email.hasError('required')">
+              Please provide email id
+          </span>
+          <span *ngIf="Email.hasError('email')">
+            Please provide valid email id
+          </span>
+        </span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="passwrod" class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="Password">
+        <span *ngIf="!Password.valid && Password.touched || userSubmitted" class="error-block">
+          <span *ngIf="Password.hasError('required')">
+            Please provide password
+          </span>
+          <span *ngIf="Password.hasError('minlength')">
+            Password should not be lesser than 8 character
+          </span>
+        </span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="cpassword" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" formControlName="ConfirmPassword">
+        <span  *ngIf="!ConfirmPassword.valid && ConfirmPassword.touched || userSubmitted" class="error-block">
+          <span *ngIf="ConfirmPassword.hasError('required')">
+            Please confirm password
+          </span>
+        </span>
+          <span *ngIf="registerationForm.hasError('notmatched') && ConfirmPassword.valid">
+            Password not matched
+          </span>
+      </div>
+
+
+        <div class="form-group col-12 button p-3">
+          <button type="submit" class="btn btn-primary mr">Register</button>
+          <button type="reset" class="btn btn-secondary ml-2">Reset</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  </div>
+</div>

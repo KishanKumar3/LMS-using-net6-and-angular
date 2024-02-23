@@ -1,0 +1,46 @@
+<!-- <div class="row">
+  <div *ngFor="let book of books" class="shadow-lg col-sm-2 p-3"  >
+    <app-book-card [book]="book"></app-book-card>
+  </div>
+</div> -->
+
+
+
+
+<div class="dropdown">
+  <div class="form-group pb-2">
+    
+    <input
+    placeholder="Search books using name and author"
+      type="text"
+      id="searchTerm"
+      [(ngModel)]="searchTerm"
+      (input)="searchBooks()"
+      class="form-control"
+    />
+  </div>
+  
+  <select class="btn btn-outline-secondary dropdown-toggle" id="filter" [(ngModel)]="selectedFilter" (change)="onFilterChange()">
+    <option value="all">All Books</option>
+    <option value="available">Available Books</option>
+  </select>
+  
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Book name</th>
+      <th scope="col">Author</th>
+      <th scope="col">Genre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of filteredBooks" >
+      <td (click)="openBookDetailsModal(book)" class="BookName">{{ book.name }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.genre }}</td> 
+
+    </tr>
+  </tbody>
+</table>

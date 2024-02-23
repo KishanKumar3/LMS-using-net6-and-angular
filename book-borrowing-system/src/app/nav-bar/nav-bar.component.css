@@ -1,0 +1,16 @@
+.title{
+    text-decoration: solid;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 13px;
+    margin: 0;
+    
+}
+.collapse {
+    flex-direction: row-reverse;
+}
+.app {
+    color: white;
+}

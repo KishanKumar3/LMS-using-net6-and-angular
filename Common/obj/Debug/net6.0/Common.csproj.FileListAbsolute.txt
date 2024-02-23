@@ -1,0 +1,14 @@
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\bin\Debug\net6.0\Common.deps.json
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\bin\Debug\net6.0\Common.dll
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\bin\Debug\net6.0\Common.pdb
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.dll
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\refint\Common.dll
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.pdb
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\ref\Common.dll
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.csproj.Fody.CopyLocal.cache
+C:\Users\kishankumar01\Downloads\Kishan Kumar Batch 01-Mar-23 (Dotnet Mini Assignment-2)\Common\obj\Debug\net6.0\Common.csproj.Fody.RuntimeCopyLocal.cache

@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand title" routerLink="/">Book Borrowing System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse" id="navbarSupportedContent">
+    <div class="right">
+      <ul class="nav navbar-nav">
+
+        <li *ngIf="loggedIn()" class="nav-item">
+          <a class="nav-link" routerLink="add-new-book" routerLinkActive="active">Add New Book</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="right">
+      <ul class="nav navbar-nav">
+        <li *ngIf="!loggedIn()" class="nav-item">
+          <a class="nav-link" routerLink="login" routerLinkActive="active">Login</a>
+        </li>
+        <li *ngIf="!loggedIn()" class="nav-item">
+          <a class="nav-link" routerLink="register" routerLinkActive="active">Register</a>
+        </li>
+
+
+        <!-- <li *ngIf="loggedIn()" class="nav-item">
+          <a class="nav-link" (click)="onLogout()">Logout</a>
+        </li> -->
+        
+
+        <div *ngIf="loggedIn()" class="dropdown mr-5" dropdown>
+          <div class="app" *ngIf="loggedIn()">
+             <span>Available Tokens: {{tokens}}  </span> 
+          </div>
+          <a href="#" class="dropdown-toggle text-light" dropdownToggle (click)="false">
+              Welcome {{name}} <!--{{loggedinUser?.userName}} -->
+          </a>
+          <div class="dropdown-menu" *dropdownMenu>
+              <a  routerLink="added-books" class="dropdown-item">
+                <i class="fas fa-tachometer-alt"></i> Added books</a>
+              <a routerLink="borrowed-books" class="dropdown-item">
+                <i class="far fa-user-circle"></i> Borrowed books</a>
+              <a (click)='onLogout()' class="dropdown-item">
+                <i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+
+
+      </ul>
+    </div>
+  </div>
+</nav>

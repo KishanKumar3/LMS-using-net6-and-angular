@@ -1,0 +1,69 @@
+[
+    {
+    "Id":100,
+    "bookName":"Book 1",
+    "Rating":10,
+    "Author":"Kishan",
+    "Genre":"Comedy",
+    "Is_Book_Available":"Yes",
+    "Description":"This is book is really amazing",
+    "Lent_By_User_Id":1,
+    "Currently_Borrowed_By_User_Id":0
+  },
+  {
+    "Id":200,
+    "bookName":"Book 2",
+    "Rating":10,
+    "Author":"Kishan",
+    "Genre":"Comedy",
+    "Is_Book_Available":"Yes",
+    "Description":"This is book is really amazing",
+    "Lent_By_User_Id":1,
+    "Currently_Borrowed_By_User_Id":0
+  },
+  {
+    "Id":300,
+    "bookName":"Book 3",
+    "Rating":10,
+    "Author":"Kishan",
+    "Genre":"Comedy",
+    "Is_Book_Available":"Yes",
+    "Description":"This is book is really amazing",
+    "Lent_By_User_Id":1,
+    "Currently_Borrowed_By_User_Id":0
+  },
+  {
+    "Id":400,
+    "bookName":"Book 4",
+    "Rating":10,
+    "Author":"Kishan",
+    "Genre":"Comedy",
+    "Is_Book_Available":"Yes",
+    "Description":"This is book is really amazing",
+    "Lent_By_User_Id":1,
+    "Currently_Borrowed_By_User_Id":0
+  }
+  ,
+  {
+    "Id":500,
+    "bookName":"Book 5",
+    "Rating":10,
+    "Author":"Kishan",
+    "Genre":"Comedy",
+    "Is_Book_Available":"Yes",
+    "Description":"This is book is really amazing",
+    "Lent_By_User_Id":1,
+    "Currently_Borrowed_By_User_Id":0
+  },
+  {
+    "Id":600,
+    "bookName":"Book 6",
+    "Rating":10,
+    "Author":"Kishan",
+    "Genre":"Comedy",
+    "Is_Book_Available":"Yes",
+    "Description":"This is book is really amazing",
+    "Lent_By_User_Id":1,
+    "Currently_Borrowed_By_User_Id":0
+  }
+]

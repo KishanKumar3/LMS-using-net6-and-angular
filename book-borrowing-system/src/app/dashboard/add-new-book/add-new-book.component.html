@@ -1,0 +1,55 @@
+<div class="card">
+  <div class="card-header">
+    Add new book
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" [formGroup]="addBookForm" >
+      <div class="form-group col-12">
+        <label for="Name">Book Name</label>
+        <input type="text" class="form-control"  formControlName="Name" required>
+
+        <span *ngIf="!Name.valid && Name.touched" class="error-block">Please enter book name</span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="Author">Author</label>
+        <input type="text" class="form-control"  formControlName="Author" required>
+        <span *ngIf="!Author.valid && Author.touched" class="error-block">Please enter author name</span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="Rating">Rating</label>
+        <input type="number" class="form-control"  formControlName="Rating" required>
+
+        <span *ngIf="!Rating.valid && Rating.touched" class="error-block">Please enter rating</span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="Genre">Genre</label>
+        <input type="text" class="form-control"  formControlName="Genre" required>
+
+        <span *ngIf="!Genre.valid && Genre.touched" class="error-block">Please enter genre</span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="Description">Description</label>
+        <input type="text" class="form-control"  formControlName="Description" required>
+
+        <span *ngIf="!Description.valid && Description.touched" class="error-block">Please provide description</span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="lentByUserId">Your email</label>
+        <input type="text" class="form-control"  formControlName="LentByUserId" required>
+
+        <span *ngIf="!LentByUserId.valid && LentByUserId.touched" class="error-block">Please enter your email</span>
+      </div>
+
+
+      <div class="form-group col-12 button p-3">
+        <button  type="submit" class="btn btn-primary mr">Add</button>
+        <button type="reset" class="btn btn-primary ">Reset</button>
+      </div>
+    </form>
+  </div>
+</div>

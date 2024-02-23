@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/forms.css' ;
+@import '../node_modules/alertifyjs/build/css/alertify.min.css';
+@import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.button{
+    text-align: center;
+}
+.mr {
+    margin-right: 10px;
+}
+
+.BookName:hover {
+    transform: scale(1.03,1.05);
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+    opacity: .9;
+    color:rgb(248, 37, 0)
+}
+.BookName {
+    transform: scale(1,1);
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}

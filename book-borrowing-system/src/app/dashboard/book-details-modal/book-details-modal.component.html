@@ -1,0 +1,30 @@
+<div class="book-details m-2 p-4">
+  <div class="modalHeader">
+    Book Details
+  </div>
+  <div class="modalBody">
+    <h2>{{ data.book.name }}</h2>
+    <p><b>Author:</b> {{ data.book.author }}</p> 
+    <p><b>Genre:</b> {{ data.book.genre }}</p>
+    <p><b>Rating:</b> {{ data.book.rating }}</p>
+    <p><b>Description:</b> {{data.book.description}}</p>
+    <p><b>Is Book Available:</b> {{ data.book.isBookAvailable ? 'Yes' : 'No' }}</p>
+    <p><b>User id of Lender:</b> {{data.book.lentByUserId}}</p>
+    <ng-container *ngIf="!data.book.isBookAvailable">
+      <p><b>Currently borrowed by user id:</b> {{ data.book.currentlyBorrowedByUserId }}</p>
+    </ng-container>
+
+    <!-- <div class="button">
+       <button class="btn btn-outline-success btn-lg" *ngIf="data.book.isBookAvailable" (click) ="borrowBook()" >Borrow <i class="fa-solid fa-book-open-reader"></i></button> 
+    </div> -->
+
+    <div class="button" *ngIf="isLoggedIn(); else loginButton">
+      <button class="btn btn-outline-success btn-lg" *ngIf="data.book.isBookAvailable" (click)="borrowBook()">Borrow <i class="fa-solid fa-book-open-reader"></i></button>
+    </div>
+    
+    <ng-template #loginButton>
+      <button class="btn btn-outline-primary btn-lg" *ngIf="data.book.isBookAvailable" (click)="goToLogin()">Login to borrow</button>
+    </ng-template>
+    
+  </div>
+</div>
