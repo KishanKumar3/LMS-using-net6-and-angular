@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Service.Services
 {
+    //Business logic for app
     public interface IBorrowService
     {
         Task BorrowBookAsync(string email, int bookId);
