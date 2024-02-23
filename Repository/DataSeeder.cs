@@ -7,7 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Repository
-{
+{   
+    //class to seed data into db
     public class DataSeeder
     {
         private readonly UserManager<ApplicationUser> _userManager;
